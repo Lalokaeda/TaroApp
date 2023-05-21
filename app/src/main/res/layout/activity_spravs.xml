@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mamarama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckg"
+    android:theme="@style/Theme.Taro"
+    tools:actionBarNavMode="standard"
+    tools:context=".spravs"
+    tools:openDrawer="end">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:theme="@style/Toolbar"
+            app:collapseIcon="@drawable/arrosw"
+            app:title="@string/raskl"
+            app:titleTextColor="@color/txt_icons" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical|fill">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/bckgv2" />
+
+
+            <RelativeLayout
+                android:id="@+id/upCont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:paddingLeft="0dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/lupa"
+                    android:layout_width="292dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/find" />
+
+                <EditText
+                    android:id="@+id/find"
+                    android:layout_width="250dp"
+                    android:layout_height="38dp"
+                    android:layout_alignStart="@+id/lupa"
+                    android:layout_alignLeft="@+id/lupa"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_marginRight="42dp"
+                    android:background="@null"
+                    android:fontFamily="@font/archivo_black"
+                    android:hint="@string/findcard"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textColor="@color/light_bckg"
+                    android:textColorHint="#806F6C9E">
+
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/filter"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignEnd="@id/lupa"
+                    android:layout_alignRight="@id/lupa"
+                    android:layout_marginEnd="-57dp"
+                    android:layout_marginRight="-57dp"
+                    android:onClick="filter"
+                    android:background="@drawable/filter" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/contcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/upCont"
+                android:padding="8dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"/>
+
+                    </androidx.gridlayout.widget.GridLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/bckg"
+        android:fitsSystemWindows="false"
+        app:headerLayout="@layout/filter_head"
+        app:itemIconTint="@color/txt_icons"
+        app:itemTextAppearance="@style/txt"
+        app:menu="@menu/fragment_filter_frag" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813968088067",
+    "project_id": "tarot-de11c",
+    "storage_bucket": "tarot-de11c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813968088067:android:6e0a096d0e0a3bab440236",
+        "android_client_info": {
+          "package_name": "com.example.taro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813968088067-ml2s34558pmh0uio34m7l2dtct0jt5gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA698h1JVyEdZ9epka47btQhCg8yxJKgaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813968088067-ml2s34558pmh0uio34m7l2dtct0jt5gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+<group android:checkableBehavior="single">
+    <item android:id="@+id/Dedarc"
+        android:title="Старшие арканы"
+        android:icon="@drawable/ded"/>
+    <item android:id="@+id/Miniarc"
+        android:title="Младшие арканы"
+        android:icon="@drawable/minia"/>
+</group>
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/Dvorarc"
+        android:title="Придворные арканы"
+        android:icon="@drawable/dvor"/>
+    <item android:id="@+id/Numarc"
+        android:title="Числовые арканы"
+        android:icon="@drawable/lopata"/>
+    </group>
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/Zhezl"
+        android:title="Жезлы"
+        android:icon="@drawable/palk"/>
+    <item android:id="@+id/Mech"
+        android:title="Мечи"
+        android:icon="@drawable/mech"/>
+    <item android:id="@+id/Kub"
+        android:title="Кубки"
+        android:icon="@drawable/kub"/>
+    <item android:id="@+id/Money"
+        android:title="Пентакли"
+        android:icon="@drawable/money"/>
+</group>
+    <item android:id="@+id/Cancel"
+        android:title="Отменить выборку"
+        android:icon="@drawable/close"/>
+</menu>

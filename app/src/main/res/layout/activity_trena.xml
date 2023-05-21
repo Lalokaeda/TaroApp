@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckg"
+    android:theme="@style/Theme.Taro"
+    tools:actionBarNavMode="standard"
+    tools:context=".trena">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            app:collapseIcon="@drawable/arrosw"
+            app:title="@string/tren"
+            app:titleTextColor="@color/txt_icons"
+            android:theme="@style/Toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical|fill">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix"
+            android:src="@drawable/bckgv2" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="false"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/oneC"
+                    android:layout_width="200dp"
+                    android:layout_height="272dp"
+                    android:background="@null"
+                    android:paddingBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="one"
+                    android:src="@drawable/onecard" />
+
+                <ImageButton
+                    android:id="@+id/threeC"
+                    android:layout_width="200dp"
+                    android:layout_height="272dp"
+                    android:layout_below="@id/oneC"
+                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="three"
+                    android:src="@drawable/threecards" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
