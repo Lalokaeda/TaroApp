@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main">
+
+        <item name="android:textSize">
+            45sp
+        </item>
+
+        <item name="android:textColor">
+            #D7CBD4
+        </item>
+        <item name="fontFamily">
+            @font/roboto_bold
+        </item>
+        <item name="android:gravity">
+            center
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="txt">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+        <item name="fontFamily">
+            @font/roboto_medium
+        </item>
+        <item name="android:textColor">
+            #D7CBD4
+        </item>
+        <item name="android:gravity">
+        center
+        </item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <!-- <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item> -->
+        <item name="android:background">@color/light_bckg</item>
+        <item name="android:text">@string/some_id</item>
+        <item name="android:textColor">@color/txt_icons</item>
+        <item name="android:content">@string/some_id</item>
+        <item name="colorControlNormal">@color/txt_icons</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:typeface">@font/roboto_medium</item>
+    </style>
+
+</resources>

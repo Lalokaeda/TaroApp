@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Таро Райдера-Уэйта</string>
+    <string name="some_id">
+        Таро Райдера-Уэйта
+</string>
+    <string name="sprav">Справочник значений</string>
+    <string name="tren">Тренажёр</string>
+    <string name="raskl">Справочник раскладов</string>
+    <string name="findcard">Найти карту...</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

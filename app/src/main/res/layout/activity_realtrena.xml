@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckg"
+    android:theme="@style/Theme.Taro"
+    tools:actionBarNavMode="standard"
+    tools:context=".realtrena">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            app:collapseIcon="@drawable/arrosw"
+            app:titleTextColor="@color/txt_icons"
+            android:theme="@style/Toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical|fill">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                android:src="@drawable/bckgv2" />
+            <TextView
+                android:id="@+id/textQuest"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/txt"
+                android:text="Вопрос: "
+                android:gravity="left"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/picd"
+    android:layout_marginTop="60dp"
+    android:padding="2dp"
+    android:layout_centerHorizontal="true">
+    <ImageView
+        android:id="@+id/card1"
+        android:layout_width="125dp"
+        android:layout_height="230dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/t00" />
+    <ImageView
+        android:id="@+id/card"
+        android:layout_width="125dp"
+        android:layout_height="230dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/t00" />
+
+
+    <ImageView
+        android:id="@+id/card2"
+        android:layout_width="125dp"
+        android:layout_height="230dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/t00" />
+</LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picd"
+                android:layout_centerInParent="true"
+                android:gravity="center|center_horizontal|center_vertical">
+
+                <Button
+                    android:id="@+id/butvar1"
+                    android:layout_width="247dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/var1"
+                    android:onClick="var1"
+                    android:scaleType="fitCenter"
+                    android:textAppearance="@style/txt"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/butvar2"
+                    android:layout_width="247dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@id/butvar1"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/var2"
+                    android:onClick="var1"
+                    android:scaleType="fitCenter"
+                    android:textAppearance="@style/txt"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/butvar3"
+                    android:layout_width="247dp"
+                    android:layout_height="52dp"
+                    android:layout_below="@id/butvar2"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/var3"
+                    android:onClick="var1"
+                    android:scaleType="fitCenter"
+                    android:textAppearance="@style/txt"
+                    android:textSize="15sp"/>
+
+                <ImageButton
+                    android:id="@+id/rear"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/butvar3"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rearrow"
+                    android:onClick="rear"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
